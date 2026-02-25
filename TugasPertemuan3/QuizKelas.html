@@ -1,0 +1,43 @@
+<!-- 162023029 - Dhina Nur Rizki Ramadani-->
+<!-- saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti menggunakan, mendupliaksi 
+kode perogram kode program yang ada. jika saya melakukan kecurangan dalam perngerjaan tugas ini 
+maka saya siap menerima sanksi atau hukuman dari dari dosen mata kuliah dan tuhan / allah  swt -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button onclick="tambah()">Click me!</button>
+
+    <p id="hasil"></p>
+
+    <p>Click the button to see the counter increase.</p>
+    <p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+
+<script>
+function tambah(){
+
+    if(sessionStorage.jumlah){
+        sessionStorage.jumlah = parseInt(sessionStorage.jumlah) + 1;
+    }else{
+        sessionStorage.jumlah = 1;
+    }
+
+    document.getElementById("hasil").innerHTML =
+    "You have clicked the button " + sessionStorage.jumlah + " time(s) in this session.";
+
+}
+
+if(sessionStorage.jumlah){
+    document.getElementById("hasil").innerHTML =
+    "You have clicked the button " + sessionStorage.jumlah + " time(s) in this session.";
+}
+
+</script>
+
+</body>
+</html>

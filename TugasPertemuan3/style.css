@@ -1,0 +1,30 @@
+/* saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti menggunakan, 
+ mendupliaksi kode perogram kode program yang ada. jiKa saya melakukan kecurangan dalam 
+ perngerjaan tugas ini maka saya siap menerima sanksi atau hukuman dari dari dosen mata kuliah 
+ dan tuhan / allah  swt */
+
+ body{
+    font-family: Georgia;
+    margin: 20px;
+}
+
+button{
+    background: #ddd;
+    border: 1px solid #888;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #ccc;
+}
+
+p{
+    font-size: 20px;
+}
+
+.keterangan{
+    margin-top: 60px;
+    color: gray;
+    font-size: 15px;
+}
