@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-image: url("../assets/LogoItenas.jpg"); 
+    background-repeat: repeat;   
+    background-size: 100px; 
+    background-attachment: fixed;
+}  
+
+.wrapper {
+    width: 850px; 
+    margin: 40px auto; 
+    background: #d79a3b;
+    border: 8px solid #7a3d3d;
+    box-sizing: border-box; 
+}
+
+.header img {
+    width: 33.33%;
+    height: 150px;
+    float: left;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px;
+}
+
+.menu {
+    cursor: pointer;
+    color: blue;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+}
+
+form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+table {
+    margin-top: 10px;
+}
+
+#output {
+    width: 500px;
+    margin: 10px auto;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#output table td:last-child {
+    background-color: white;
+    padding: 5px 90px;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    background: orange;
+    padding: 10px;
+}
+
+#tanggal, #bulan, #tahun {
+    font-weight: bold;
+}
