@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluasi 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="pesanAwal()">
+
+<div class="content">
+    <div class="gambar-grid">
+        <img src="assets/ItenasCover.jpg">
+        <img src="assets/ItenasCover.jpg">
+        <img src="assets/ItenasCover.jpg">
+        <img src="assets/ItenasCover.jpg">
+        <img src="assets/ItenasCover.jpg">
+        <img src="assets/ItenasCover.jpg">
+    </div>
+<div class="main">
+
+<div class="menu">
+    <p onclick="showHome()">Home</p>
+    <p onclick="showMenu()">Menu</p>
+    <p onclick="showCalculator()">Calculator</p>
+</div>
+
+<div id="home" class="halaman">
+    <div class="shout-area">
+        <p>klik button di samping >></p>
+        <button class="shout-btn" onclick="shout()">Shout</button>
+    </div>
+</div>
+
+<div id="menuMakanan" class="halaman">
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Makanan/Minuman</th>
+            <th>Harga</th>
+            <th>Pesan</th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Bakso Istimewa</td>
+            <td>@ Rp 12000</td>
+            <td><input type="number" id="bakso" value="0" onchange="hitungMenu()">
+            </td>
+
+                <td rowspan="6" style="background:#ddd;text-align:center;">
+                    <button class="shout-btn" onclick="resetMenu()">Reset</button>
+                </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Soto Spesial</td>
+            <td>@ Rp 10000</td>
+            <td><input type="number" id="soto" value="0" onchange="hitungMenu()"></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Mie Ayam Super</td>
+            <td>@ Rp 15000</td>
+            <td><input type="number" id="mie" value="0" onchange="hitungMenu()"></td>
+        </tr>   
+
+        <tr>
+            <td colspan="3">Jumlah Total</td>
+            <td><input type="text" id="total" readonly></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Diskon</td>
+            <td><input type="text" id="diskon" readonly></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Jumlah Bayar</td>
+            <td><input type="text" id="bayar" readonly></td>
+        </tr>
+    </table>
+</div>
+
+<div id="calculator" class="halaman">
+    <div class="calc-row">
+        <input type="number" id="angka1">
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+                <option value="^">^</option>
+            </select>
+
+<input type="number" id="angka2">
+<span>=</span>
+<input type="text" id="hasil" readonly>
+</div>
+    <br>
+        <button class="shout-btn" onclick="hitungCalc()">Hitung</button> <button class="shout-btn" onclick="resetCalc()">Reset</button>
+    </div>
+</div> 
+
+<footer class="footer-text">
+    <div class="nim">2808224</div>
+    <div>Sistem Informasi I ITENAS 2026</div>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
